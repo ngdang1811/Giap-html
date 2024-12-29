@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Unitop.vn</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        #wrapper {
+            max-width: 1100px; /* Increased width */
+            margin: 0 auto;
+        }
+        #header,
+        #footer {
+            background: brown;
+            padding: 20px; /* Increased padding */
+            text-align: center;
+            color: yellow;
+        }
+        #wp-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #content,
+        #sidebar {
+            padding: 15px; /* Increased padding */
+            box-sizing: border-box;
+        }
+        #content {
+            flex-basis: 100%;
+            background: rgb(240, 240, 240);
+        }
+        #sidebar {
+            flex-basis: 100%;
+            color: #fff;
+            background: gray;
+        }
+        @media (min-width: 576px) {
+            #content {
+                flex-basis: 70%;
+            }
+            #sidebar {
+                flex-basis: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header -->
+        <div id="header">
+            <h1>Vườn thú</h1>
+            <p>Giới thiệu về hổ Siberia</p>
+        </div>
+
+        <!-- Main Content Area -->
+        <div id="wp-content">
+            <div id="content">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <h2>Where does it come from?</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text...</p>
+                <h2>Why do we use it?</h2>
+                <p>It is a long established fact that a reader will be distracted...</p>
+                <h2>Where can I get some?</h2>
+                <p>There are many variations of passages of Lorem Ipsum available...</p>
+            </div>
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <h3>Sidebar Content</h3>
+                <p>This is some content in the sidebar. You can place links, advertisements, or anything else here.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <p>&copy; 2024 Vườn thú. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
